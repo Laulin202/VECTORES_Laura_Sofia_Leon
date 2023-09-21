@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectores_html</title>
+    <!--Favicon = Para colocar icono en el parte de arriba de la pagina-->
+    <link rel="icon" type="image/png" href="./src/imgs/256x256.png">
+    <!--Bootstrap link : Permite linkear una hoja de estilo directamente a nuestro documento-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- FontAwesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Linkear la hoja de estilos nuestra-->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!--THREEJS SCRIPT-->
+    <script src="./src/libs/three.min.js"></script>
+  </head>
+<!--Nota: "<a></a> es para linkear con otra pag"-->
+<!-- <ul><li><a></a></li></ul> ==== ul es la lista, li es 1 elemento de la lista, a es lo que ira dentro de ese elemnto-->  
+<body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./src/imgs/LOGO PNG.png" alt="logo" width="50px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Vectores</a></li>
+                  <li><a class="dropdown-item" href="#">Calculadora</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Graficos</a></li>
+                  <li><a class="dropdown-item" href="#">Nose</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="hola.html" >Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Texto para agregar la imagenes de vectores-->
+      <!-- Columnas y tablas -->
+      <div class="container text-center" style="margin-top: 5%;">
+        <div class="row">
+
+          <div class="col">
+            <!-- Tarjeta -->
+            <div class="card" style="width: 18rem;">
+                <img src="./src/imgs/imgVector.png" class="card-img-top" alt="no hay no existe" width="200" height="150"> <!--Me permite colocar un texto externo si la imagen esta rota-->
+                <div class="card-body">
+                  <h5 class="card-title">Vectors</h5>
+                  <p class="card-text">To make and evaluate vectors</p>
+                  <a href="#" class="btn btn-primary">Vectores</a>
+                </div>
+            </div>
+            <!-- Tarjeta -->
+          </div>
+
+          <div class="col">
+            <!-- Tarjeta -->
+            <div class="card" style="width: 18rem;">
+                <img src="./src/imgs/imgFigures.png" class="card-img-top" alt="no hay no existe"> <!--Me permite colocar un texto externo si la imagen esta rota-->
+                <div class="card-body">
+                  <h5 class="card-title">Objects</h5>
+                  <p class="card-text">To create box, Sphere, others</p>
+                  <a href="./src/views/objects.html" class="btn btn-primary">Objectos</a>
+                </div>
+            </div>
+            <!--Tarjeta -->
+          </div>
+
+          <div class="col">
+            <!-- Tarjeta -->
+            <div class="card" style="width: 18rem;">
+                <img src="./src/imgs/imgTransf.png" class="card-img-top" alt="no hay no existe"> <!--Me permite colocar un texto externo si la imagen esta rota-->
+                <div class="card-body">
+                  <h5 class="card-title">Transformations</h5>
+                  <p class="card-text">To rotate, escale, and reflexion</p>
+                  <a href="#" class="btn btn-primary">Transformations</a>
+                </div>
+            </div>
+            <!-- Tarjeta -->
+          </div>
+
+        </div>
+      </div>
+
+        
+      <footer class="bg-light text-dark pt-5 pb-4">
+
+      <div class="container text-center text-md-start" > <!--Que el texto lo mantenga centrado-->
+        <div class="row text-center text-md-start">
+
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"> <!--El "3" es la cantidad de espacio que ocupara esta columna en la fila, entre mas grande, mas porcentaje de espacio ocupará-->
+            <h5 class="text-uppercase mb-4 font-weight-bold text-primary">nosotros</h5>
+            <hr class="mb-4">
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quidem nisi tenetur ut, 
+              impedit maxime deserunt nesciunt dolorem eveniet doloremque quibusdam, eum explicabo omnis 
+              laudantium odit ipsa ea assumenda totam?
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold "> Dejanos ayudarte</h5>
+            <hr class="mb-4">
+            <p>
+              <a href="#" class="text-dark">Tu cuenta</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark">Ayuda</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark">Manejo de cuenta</a>
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold "> Dejanos ayudarte</h5>
+            <hr class="mb-4">
+            <p>
+              <a href="#" class="text-dark">Tu cuenta</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark">Ayuda</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark">Manejo de cuenta</a>
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold"> Contact us</h5>
+            <hr class="mb-4">
+            <p>
+              <li class="fas fa-home me-3"></li> Cali, colombia
+            </p>
+            <p>
+              <li class="fas fa-envelope me-3"></li> soulight@gmail.com  <!--como hacer para que el icono sea un link?-->
+            </p>
+            <p>
+              <li class="fas fa-phone me-3"></li> (+57) 3128547788
+            </p>
+          </div>
+
+          <hr class="mb-4">
+
+          <div class="text-center mb-2">
+            <p>
+              Copyright todos los derechos reservados
+              <a href="#"> 
+                <strong class="text-primary">Laura Sofia Leon</strong>
+              </a>
+            </p>
+          </div>
+
+          <div class="text-center">
+            <ul class="list-unstyled list-inline">
+
+              <li class="list-inline-item">
+                <a href="#" class="text-dark"> <i class="fab fa-facebook"></i> </a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#" class="text-dark"> <i class="fab fa-twitter"></i> </a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#" class="text-dark"> <i class="fab fa-google-plus"></i> </a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#" class="text-dark"> <i class="fab fa-youtube"></i> </a>
+              </li>
+
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      </footer>
+
+
+      <!--Scripts de Bootstrap-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      
+    </body>
+</html>
