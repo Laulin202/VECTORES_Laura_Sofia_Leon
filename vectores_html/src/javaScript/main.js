@@ -151,7 +151,7 @@ function createLights(lightType) {
 
         case "AmbientLight":
             //AmbientLight( color : Integer, intensity : Float )
-            light = new THREE.AmbientLight(0xffffff, 0.5); // soft white light
+            light = new THREE.AmbientLight(0xffffff, 0.8); // soft white light
             scene.add(light);
             break;
 
