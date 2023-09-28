@@ -21,8 +21,8 @@ var
     //stats = null;
 
 
-const size = 10;
-divisions = 10;
+const size = 50;
+divisions = 50;
 
 function createThreeJs() {
   
@@ -39,7 +39,7 @@ function createThreeJs() {
 
 
     controls = new THREE.OrbitControls(camera, renderer.domElement);
-    camera.position.set(0, 20, 100);
+    camera.position.set(6.2, 4.6, 0.1);
     //camera.position.z = 5;
     controls.update();
 
@@ -58,6 +58,10 @@ function createThreeJs() {
     
 
     
+    loadObject("../models/OBJ_MTL/personajes/", "Rupertobj.mtl", "Rupertobj.obj");
+    loadGLTF();
+    createCollectibles();
+    //loadEscenary("../models/OBJ_MTL/escenario/", "EscenarioLab.mtl", "EscenarioLab.obj");
     
 }
 
@@ -66,7 +70,7 @@ function animate() {
     requestAnimationFrame(animate);
     renderer.render(scene, camera); //Esto permite que los cubos se muestren
 
-
+    //console.log(camera.position);
     // cube.rotation.x = 0.00;
     // cube.rotation.y += 0.10;
 }

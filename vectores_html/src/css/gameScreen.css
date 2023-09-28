@@ -1,0 +1,19 @@
+#winnerScreen{
+    position: absolute;
+    background-image: url("../imgs/victoria1.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
+
+#loserScreen{
+    position: absolute;
+    background-image: url("../imgs/derrota.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
