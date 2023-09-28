@@ -61,6 +61,7 @@ function createThreeJs() {
     loadObject("../models/OBJ_MTL/personajes/", "Rupertobj.mtl", "Rupertobj.obj");
     loadGLTF();
     createCollectibles();
+    gameStates();
     //loadEscenary("../models/OBJ_MTL/escenario/", "EscenarioLab.mtl", "EscenarioLab.obj");
     
 }

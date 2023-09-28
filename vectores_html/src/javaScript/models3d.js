@@ -121,20 +121,19 @@ function createCollectible(posicionx, posicionz) {
 
 }
 
-function gameStatess(caseSituation) {
+function gameStates(caseSituation) {
     //game, win, lose
 
     switch (caseSituation) {
-        case "game":
-            // code block
-            break;
         case "win":
-            // code block
+            document.getElementById("winnerScreen").style.display = "block";
             break;
         case "lose":
-            // code block
+            document.getElementById("loserScreen").style.display = "block";
             break;
         default:
+            document.getElementById("winnerScreen").style.display = "none";
+            document.getElementById("loserScreen").style.display = "none";
         // code block
     }
 
